@@ -16,5 +16,11 @@ const poemFromInternet = {
     nem jövök, mert itt vagyok.`
 };
 
+// favouritePopemOfAndras.favouritBy = "András";
+// console.log(favouritePopemOfAndras);
+
 const favouritePopemOfAndras = new Poem (poemFromInternet);
-console.log(favouritePopemOfAndras);
+Poem.prototype.lang = "Hungarian";
+console.log(favouritePopemOfAndras.lang);
+console.log(favouritePopemOfAndras.__proto__);
+console.log(Poem.prototype);
